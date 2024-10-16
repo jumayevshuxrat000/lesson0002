@@ -1,0 +1,47 @@
+.chance__info {
+    h3 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+.chance__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    text-align: center;
+    grid-gap: 15px;
+    margin-bottom: 60px;
+    .chance__card {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            color: #898989;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .chance__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width: 330px) {
+    .chance__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+}

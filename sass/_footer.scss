@@ -1,0 +1,156 @@
+.footer {
+    background-color: #2e1d1b;
+    padding: 40px 0;
+    color: #fff;
+    margin-top: 150px;
+  
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    &__column {
+      text-align: left;
+  
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 10px;
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  
+    .contact {
+      p {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+  
+      .social-icons {
+        a {
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+  
+          i {
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+      }
+  
+      .apps {
+        a img {
+          width: 120px;
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #fff;
+      padding-top: 20px;
+  
+      p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 581px) {
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer__column {
+        text-align: center; 
+    }
+
+    .contact p {
+        font-size: 20px; 
+    }
+
+    .social-icons a {
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        i {
+            font-size: 20px; 
+        }
+    }
+
+    .apps a img {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .footer__bottom p {
+        font-size: 12px; 
+    }
+}
+@media (max-width: 350px) {
+    .footer__container {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    .footer__column {
+        text-align: center; 
+        padding: 0 10px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        i {
+            font-size: 18px; 
+        }
+    }
+
+    .apps a img {
+        width: 90px;
+        margin-right: 5px;
+    }
+
+    .footer__bottom {
+        flex-direction: column; 
+        p {
+            font-size: 12px; 
+        }
+    }
+}

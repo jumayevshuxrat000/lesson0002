@@ -1,0 +1,181 @@
+.new__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin-top: 50px;
+
+    h3 {
+        margin: 0;
+        color: #000;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .arrows {
+        display: flex;
+        .arrow{
+            width: 45px;
+            height: 45px;
+            background-color: #c3d2dc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    
+        .right {
+            margin-left: 25px;
+        }
+    }
+}
+
+.new__wrapper {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    grid-gap: 20px;
+    .new__card {
+        position: relative;
+        img {
+            width: 311px;
+            height: 311px;
+            border-radius: 50%;
+        }
+        h4 {
+            font-weight: 500;
+            font-size: 18px;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 8px;
+            color: #898989;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 18px;
+            color: #222;
+            font-weight: 400;
+        }
+        h5 {
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            left: 66px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-weight: 400;
+            background-color: rgb(46, 17, 1);
+            padding-top: 10px;
+            color: #fff;
+            border: 3px solid #fff;
+        }
+    }
+}
+@media (max-width: 1230px) {
+    .new__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 1028px) {
+    .new__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        .new__card {
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            h4 {
+                font-weight: 500;
+                font-size: 14px;
+                color: #000;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 8px;
+                color: #898989;
+                font-size: 12px;
+            }
+            h3 {
+                font-size: 14px;
+                color: #222;
+                font-weight: 400;
+            }
+            h5 {
+                font-size: 12px;
+                position: absolute;
+                top: 15px;
+                left: 50px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                font-weight: 400;
+                background-color: rgb(46, 17, 1);
+                padding-top: 6px;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+        }
+    }
+}
+@media (max-width: 680px) {
+    .new__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+        .new__card {
+            h5 {
+                font-size: 12px;
+                position: absolute;
+                top: 15px;
+                left: 60px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                font-weight: 400;
+                background-color: rgb(46, 17, 1);
+                padding-top: 6px;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+        }
+    }
+}
+@media (max-width: 472px) { 
+    .new__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 10px;
+        .new__card {
+            h5 {
+                font-size: 12px;
+                position: absolute;
+                top: 15px;
+                left: 110px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                font-weight: 400;
+                background-color: rgb(46, 17, 1);
+                padding-top: 6px;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+        }
+    }
+}
+@media (max-width: 472px) {
+    .new__card {
+        h5 {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.about__info {
+    h3 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+.about__wrapper {
+    display: grid;
+    margin-bottom: 100px;
+    .about__card {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+        grid-gap: 90px;
+        position: relative;
+        img {
+            width: 670px;
+            height: 376.88px;
+            border-radius: 10px;
+        }
+        .about__text {
+            width: 606px;
+            h4 {
+                font-size: 32px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #898989;
+            }
+            .circle {
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    text-align: center;
+                    padding-top: 50px;
+                    width: 144px;
+                    height: 144px;
+                    background-color: #dcc38b;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 120px;
+                    left: 640px;
+                    border: 10px solid #ffffff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1430px) {
+    .about__text {
+        max-width: 480px;
+        h4 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    .circle {
+        display: none;
+    }
+}
+@media (max-width: 990px) {
+    .about__text {
+        max-width: 300px;
+    }
+    .about__card {
+        display: flex;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+}
+@media (max-width: 780px) {
+    .about__text {
+        max-width: 220px;
+    }
+}
+@media (max-width:495px) {
+    .about__text {
+        max-width: 120px;
+    }
+    .about__card {
+        display: flex;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+}
+@media (max-width: 465px) {
+    .about__card {
+        img {
+            display: none;
+        }
+        .about__text {
+            max-width: 120px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            translate: 100px 0px;
+            h4 {
+                display: none;
+            }
+        }
+    }
+}
